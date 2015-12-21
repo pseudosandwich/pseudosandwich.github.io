@@ -61,72 +61,11 @@ html, body {
 }
 
 body {
-  font-family:'proxima-nova', sans-serif;
-  letter-spacing:0.1rem;
-  text-shadow:1px 1px 3px #000;
-  color:white;
-
-  background:#ebe2da linear-gradient(0deg, rgba(0,0,0,0.55),  rgba(0,0,0,0.55)) url('../img/sandwich.png');
+  background:#ebe2da url('../img/sandwich.png');
   -webkit-background-size:contain;
           background-size:contain;
   background-repeat:no-repeat;
   background-position:center center;
-}
-
-.main {
-  position:absolute;
-  top:0; bottom:0;
-  left:0; right:0;
-  z-index:-1;
-}
-
-.middle {
-  box-sizing:border-box;
-  width:100%;
-  margin: 0 2rem;
-  text-align:center; /* for centering ul */
-}
-
-.main {
-  display: -ms-flexbox;
-  display: flex;
-
-    -ms-flex-pack: center;
-  justify-content: center;
-
-  -ms-flex-align: center;
-     align-items: center;
-}
-
-h1 {
-  margin:0;
-  text-transform:uppercase;
-  text-shadow:3px 3px 10px rgba(0,0,0,0.5);
-  color:#34b8c4;
-}
-
-.sandwich {
-  font-size:6.5rem;
-  font-weight:300;
-  line-height:1;
-  letter-spacing:2.75rem;
-  text-align:center;
-
-  position:relative;
-  left:1rem;
-}
-
-.pseudo {
-  font-size:12rem;
-  line-height:12rem;
-  font-weight:bold;
-  letter-spacing:0.8rem;
-  color:#52cc71;
-}
-
-.logo {
-  width:10rem;
-  height:10rem;
 }
 
 
