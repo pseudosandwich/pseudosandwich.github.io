@@ -1,0 +1,309 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, body {
+  height:100%;
+}
+
+body {
+  font-family:'proxima-nova', sans-serif;
+  letter-spacing:0.1rem;
+  text-shadow:1px 1px 3px #000;
+  color:white;
+
+  background:#ebe2da linear-gradient(0deg, rgba(0,0,0,0.55),  rgba(0,0,0,0.55)) url('../img/sandwich.png');
+  -webkit-background-size:contain;
+          background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+
+.main {
+  position:absolute;
+  top:0; bottom:0;
+  left:0; right:0;
+  z-index:-1;
+}
+
+.middle {
+  box-sizing:border-box;
+  width:100%;
+  margin: 0 2rem;
+  text-align:center; /* for centering ul */
+}
+
+.main {
+  display: -ms-flexbox;
+  display: flex;
+
+    -ms-flex-pack: center;
+  justify-content: center;
+
+  -ms-flex-align: center;
+     align-items: center;
+}
+
+h1 {
+  margin:0;
+  text-transform:uppercase;
+  text-shadow:3px 3px 10px rgba(0,0,0,0.5);
+  color:#34b8c4;
+}
+
+.sandwich {
+  font-size:6.5rem;
+  font-weight:300;
+  line-height:1;
+  letter-spacing:2.75rem;
+  text-align:center;
+
+  position:relative;
+  left:1rem;
+}
+
+.pseudo {
+  font-size:12rem;
+  line-height:12rem;
+  font-weight:bold;
+  letter-spacing:0.8rem;
+  color:#52cc71;
+}
+
+.logo {
+  width:10rem;
+  height:10rem;
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 50em) {
+  ul, nav a {
+    font-size:1.5rem;
+  }
+
+  nav a {
+    width:10rem;
+  }
+
+  h1 {
+    font-size:3rem;
+  }
+}
+
+@media only screen and (max-width:40em) {
+  ul, nav a {
+    font-size:0.8rem;
+  }
+}
+
+@media only screen and (max-height:30em), only screen and (max-width:45em) {
+    nav {
+      position:absolute;
+      top:80%;
+    }
+
+    .main {
+      height:80%;
+      top:0;
+    }
+
+    .logo {
+      display:none;
+    }
+
+    nav a {
+      color:#444;
+      text-shadow:none;
+      width:100%;
+      display:block;
+      margin:0;
+      line-height:6;
+      background:white;
+    }
+
+    nav a:hover {
+      color:#888;
+      text-shadow:none;
+    }
+
+    nav a:not(last-child) {
+      border-bottom:1px solid #ccc;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
